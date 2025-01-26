@@ -1,0 +1,100 @@
+/* General body styling */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(0, 15, 30);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Calculator container */
+#calculator {
+  background-color: rgb(58, 70, 58);
+  max-width: 400px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Display section */
+#display {
+  background-color: black;
+  padding: 10px;
+}
+
+#result {
+  width: 100%;
+  padding: 10px; /* Reduced padding */
+  font-size: 1.8rem; /* Slightly smaller font */
+  text-align: right;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* Buttons grid */
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px; /* Reduced gap */
+  padding: 15px; /* Reduced padding */
+}
+
+/* General button styling */
+button {
+  width: 100%;
+  aspect-ratio: 1 / 1.2; /* Slightly rectangular buttons */
+  border-radius: 10px; /* Smaller rounded corners */
+  border: none;
+  background-color: lightcoral;
+  color: white;
+  font-size: 1.4rem; /* Adjusted font size */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Button hover and active states */
+button:hover {
+  background-color: rgb(10, 3, 37);
+}
+
+button:active {
+  background-color: rgb(32, 25, 16);
+  transform: scale(0.95); /* Adds a pressed effect */
+}
+
+/* Operator buttons */
+.operator-button {
+  background-color: orange;
+}
+
+.operator-button:hover {
+  background-color: rgb(161, 115, 28);
+}
+
+.operator-button:active {
+  background-color: rgb(255, 140, 0);
+}
+
+/* Special buttons (AC and DEL) */
+.clear {
+  background-color: crimson;
+}
+
+.clear:hover {
+  background-color: rgb(128, 0, 0);
+}
+
+.delete {
+  background-color: crimson;
+}
+
+.delete:hover {
+  background-color: rgb(128, 1, 0);
+}
